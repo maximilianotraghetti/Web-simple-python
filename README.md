@@ -52,11 +52,3 @@ flask_textbox_app/
    ```
 3. Abrir el navegador y acceder a: [http://127.0.0.1:5000](http://127.0.0.1:5000)
 
----
-
-## Funcionamiento
-
-- **Caja de texto:** Al escribir en la caja y presionar **Enter**, se muestra un `alert` con el contenido ingresado.
-- **Botón de cambio de color:** Cada vez que se hace clic en el botón, se alternan los colores de fondo y texto siguiendo la secuencia definida.
-
----
