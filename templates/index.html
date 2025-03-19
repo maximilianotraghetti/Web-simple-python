@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Sitio Web Simple con Flask</title>
+  <style>
+    #textbox {
+      padding: 10px;
+      font-size: 16px;
+      width: 300px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <input type="text" id="textbox" placeholder="Escribe aquí y presiona Enter">
+  <br>
+  <button id="changeColorBtn">Cambiar Color</button>
+
+  <script>
+    // Seleccionar elementos
+    const textbox = document.getElementById('textbox');
+    const changeColorBtn = document.getElementById('changeColorBtn');
+
+    // Variable para llevar el control de la secuencia de colores
+    let colorIndex = 0;
+    const colorOptions = [
+      { background: 'white', color: 'black' },
+      { background: 'black', color: 'white' },
+      { background: 'lightblue', color: 'red' }
+    ];
+
+    // Evento para la tecla Enter en la caja de texto
+    textbox.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') {
+        alert(textbox.value);
+      }
+    });
+
+    // Evento para el botón que cambia los colores
+    changeColorBtn.addEventListener('click', () => {
+      colorIndex = (colorIndex + 1) % colorOptions.length;
+      const currentColors = colorOptions[colorIndex];
+      textbox.style.backgroundColor = currentColors.background;
+      textbox.style.color = currentColors.color;
+    });
+  </script>
+</body>
+</html>
