@@ -1,14 +1,14 @@
 # Sitio Web Simple con Flask
 
-Este proyecto es una aplicación web simple construida con Flask en Python. 
+Este proyecto es una aplicación web simple construida con Flask en Python.
 
 ## Funcionalidades
 
 1. Una caja de texto donde el usuario puede escribir y, al presionar la tecla **Enter**, se muestra una ventana emergente con el contenido ingresado.
 2. Un botón que cambia el color de fondo y el color del texto de la caja en el siguiente orden:
-   - Fondo blanco - Texto negro  
-   - Fondo negro - Texto blanco  
-   - Fondo celeste - Texto rojo  
+   - Fondo blanco - Texto negro
+   - Fondo negro - Texto blanco
+   - Fondo celeste - Texto rojo
 
 ---
 
@@ -60,5 +60,3 @@ flask_textbox_app/
 - **Botón de cambio de color:** Cada vez que se hace clic en el botón, se alternan los colores de fondo y texto siguiendo la secuencia definida.
 
 ---
-
-¡Listo! Ahora puedes probar la aplicación y modificarla según tus necesidades.
